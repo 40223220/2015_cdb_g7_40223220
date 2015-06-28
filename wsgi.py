@@ -651,8 +651,8 @@ class Hello(object):
         g1= int(cherrypy.session.get('g1'))
         g2= int(cherrypy.session.get('g2'))
         
-        m_g1 = 20*g1/2
-        m_g2 = 20*g2/2
+        m_g1 = 10*g1/2
+        m_g2 = 10*g2/2
         
         if m_g1>=m_g2:
             x=m_g1
@@ -682,7 +682,7 @@ class Hello(object):
 
     <fieldset>
 
-     <legend>齒輪組合:</legend>
+     <legend>齒輪組合圖:</legend>
 
     <!-- 以下為 canvas 畫圖程式 -->
     <script type="text/python">
@@ -707,9 +707,9 @@ class Hello(object):
     x='''+str(x)+'''
     x=x+20
 
-    pa = 20
+    pa = 10
     # m 為模數
-    m = 20
+    m = 10
     # 第1齒輪齒數
     n_g1 ='''+str( g1)+'''
     # 第2齒輪齒數
@@ -943,8 +943,8 @@ class Hello(object):
         g3= int(cherrypy.session.get('g3'))
         g4= int(cherrypy.session.get('g4'))
          
-        m_g1 = 20*g1/2
-        m_g2 = 20*g2/2
+        m_g1 = 10*g1/2
+        m_g2 = 10*g2/2
         
         if m_g1>=m_g2:
             x=m_g1
@@ -972,7 +972,7 @@ class Hello(object):
     <!-- 啟動 brython() -->
     <body onload="brython()">
 
-     <legend>下面有返回按鈕:</legend>
+     <legend>齒輪組和圖:</legend>
 
     <!-- 以下為 canvas 畫圖程式 -->
     <script type="text/python">
@@ -994,9 +994,9 @@ class Hello(object):
     # 模數決定齒的尺寸大小, 囓合齒輪組必須有相同的模數與壓力角
     # 壓力角 pa 單位為角度
 
-    pa = 20
+    pa = 10
     # m 為模數
-    m = 20
+    m = 10
 
     x='''+str(x)+'''
     x=x+20
