@@ -174,7 +174,6 @@ class Hello(object):
         # 印出讓使用者輸入的超文件表單
         outstring = '''
     a_40223220
-    doCheck(15)
     '''
 
         return outstring
@@ -673,14 +672,13 @@ class Hello(object):
     <script src="/static/gearUtils-04.js" type="text/javascript"></script>
 
 
-    <input type=\"submit\" value=\"return\">
+    <input type=\"submit\" value=\"重新繪製\">
     </form>
 
 
     </head>
     <!-- 啟動 brython() -->
     <body onload="brython()">
-
 
     <fieldset>
 
